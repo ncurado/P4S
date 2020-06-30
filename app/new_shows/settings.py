@@ -27,10 +27,11 @@ INSTALLED_APPS = [
     "crispy_forms",
     "newshows",
     "django_q",
-]
+p]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -168,3 +169,6 @@ LOGGING = {
         },
     },
 }
+
+#WHITENOISE
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
