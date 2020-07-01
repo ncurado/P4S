@@ -16,9 +16,7 @@ P4S is a app that updates it's local database with the show information from TV 
 Production/Docker:
 - Clone the repository: ```git clone https://github.com/faulander/P4S.git```
 - Make the Shell files executables ```chmod +x *.sh```
-- run ```./setup.sh``` and chose your preferred database setup (Postgres or other/own db)
-- Edit .env.prod and enter your desired credentials and settings
-- If you've chosen
+- run ```./setup.sh``` and answer the questions
 - Run ```./firstart.sh```
 - Run ```./startapp.prod.sh```
 - Browse to http://localhost:1337/ (or Ip-Adress of server where you installed it)
